@@ -1,13 +1,13 @@
 <div class="span5">
   <div class="classroom-name"><h2>Classroom Dashboard: <%= @classroom.title %></h2></div>
-  <%- if !@classrooms.blog_posts.empty? %>
+  <%#- if !@classrooms.blog_posts.empty? %>
   <div class="span7">
          <div class="well">
                 <h3>Classroom Blog Posts</h3>
                 <ul class="class-dashboard">
-                  <%- @classroom.blog_posts.ordered.each do |post| %>
-                        <li><%= gravatar_image_tag(post.user.email, :gravatar => { :size => 25, :default => :identicon  }) %>&nbsp;<%= link_to post.title, classroom_blog_post_path(@classroom.id,post.id$
-                  <% end %>
+                  <%#- @classroom.blog_posts.ordered.each do |post| %>
+                        <li><%#= gravatar_image_tag(post.user.email, :gravatar => { :size => 25, :default => :identicon  }) %>&nbsp;<%#= link_to post.title, classroom_blog_post_path(@classroom.id,post.id$
+                  <%# end %>
                 </ul>
          </div>
   </div><!-- end span7 -->
